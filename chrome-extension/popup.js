@@ -23,6 +23,8 @@ function getURL() {
  */
 function setStatus(text) {
   document.body.innerText = text;
+  chrome.browserAction.setBadgeBackgroundColor({color:'#696969'});
+  chrome.browserAction.setBadgeText({text:text.toString()});
 }
 
 /**

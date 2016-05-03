@@ -41,8 +41,7 @@ var API = {
 };
 
 var Auth = {
-  // consumerKey: '30559-c9bebc6f13a469d6e6417b38',
-  consumerKey: '52749-129010c94f48de9c0d2253a8',
+  consumerKey: 'XXXX-YYYYYYYYYYYYYYYYYY',
   redirectUri: chrome.extension.getURL('auth.html'),
 
   storageKey: {
@@ -57,7 +56,7 @@ var Auth = {
   isNeeded: function() {
     return localStorage[Auth.storageKey.accessToken] == null;
   },
-  
+
   /**
    * Run the auth flow.
    * Can't return a promise because the auth flow may involve opening a tab
